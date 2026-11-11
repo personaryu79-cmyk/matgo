@@ -417,19 +417,17 @@ export default function App() {
             </div>
           </div>
 
-          <div
-            className="floor"
-            onMouseLeave={() => setHoverMonth(null)}
-          >
+          <div className="floor" onMouseLeave={() => setHoverMonth(null)} aria-live="polite">
             {game.floor.map((card) => (
-              <CardTile
-                key={card.id}
-                card={card}
-                matched={hoverMonth === card.month && hoverMonth !== null}
+              <img 
+                key={card.id} 
+                src={`/assets/${card.id}.svg`} 
+                alt={`${card.kind === 'gwang' ? '광' : card.kind === 'yeol' ? '열끗' : card.kind === 'tti' ? '띠' : '피'} - ${card.name}`} 
+                className="floor-card"
               />
             ))}
             {game.floor.length === 0 && (
-              <p className="empty-floor">바닥이 비었습니다</p>
+              <p>바닥이 비었습니다</p>
             )}
           </div>
         </section>
@@ -456,18 +454,12 @@ export default function App() {
           </div>
           <div className="hand" onMouseLeave={() => setHoverMonth(null)}>
             {game.hands.human.map((card) => {
-              const matchCount = game.floor.filter(
-                (floorCard) => floorCard.month === card.month,
-              ).length;
-
               return (
-                <CardTile
-                  key={card.id}
-                  card={card}
-                  onClick={() => playCard(card.id)}
-                  onHover={() => setHoverMonth(card.month)}
-                  disabled={!canPlay}
-                  matchCount={matchCount}
+                <img 
+                  key={card.id} 
+                  src={`/assets/${card.id}.svg`} 
+                  alt={`${card.kind === 'gwang' ? '광' : card.kind === 'yeol' ? '열끗' : card.kind === 'tti' ? '띠' : '피'} - ${card.name}`} 
+                  className="hand-card"
                 />
               );
             })}
