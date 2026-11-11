@@ -417,14 +417,14 @@ export default function App() {
           </div>
 
           <div className="floor" onMouseLeave={() => setHoverMonth(null)} aria-live="polite">
-            {game.floor.map((card) => (
-              <img 
-                key={card.id} 
-                src={`/assets/${card.id}.svg`} 
-                alt={`${card.kind === 'gwang' ? '광' : card.kind === 'yeol' ? '열끗' : card.kind === 'tti' ? '띠' : '피'} - ${card.name}`} 
-                className="floor-card"
-              />
-            ))}
+             {game.floor.map((card) => (
+               <img 
+                 key={card.id} 
+                 src={`/cards/${card.id}.svg`} 
+                 alt={`${card.kind === 'gwang' ? '광' : card.kind === 'yeol' ? '열끗' : card.kind === 'tti' ? '띠' : '피'} - ${card.name}`} 
+                 className="floor-card"
+               />
+             ))}
             {game.floor.length === 0 && (
               <p>바닥이 비었습니다</p>
             )}
@@ -453,15 +453,15 @@ export default function App() {
           </div>
           <div className="hand" onMouseLeave={() => setHoverMonth(null)}>
             {game.hands.human.map((card) => {
-              return (
-                <img 
-                  key={card.id} 
-                  src={`/assets/${card.id}.svg`} 
-                  alt={`${card.kind === 'gwang' ? '광' : card.kind === 'yeol' ? '열끗' : card.kind === 'tti' ? '띠' : '피'} - ${card.name}`} 
-                  className="hand-card"
-                />
-              );
-            })}
+               return (
+                 <img 
+                   key={card.id} 
+                   src={`/cards/${card.id}.svg`} 
+                   alt={`${card.kind === 'gwang' ? '광' : card.kind === 'yeol' ? '열끗' : card.kind === 'tti' ? '띠' : '피'} - ${card.name}`} 
+                   className="hand-card"
+                 />
+               );
+             })}
             {game.hands.human.length === 0 && (
               <p className="empty-hand">남은 패가 없습니다.</p>
             )}

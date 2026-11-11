@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 64">
+  <defs>
+    <filter id="m07-gwang-1-noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="2"/>
+      <feDiffuseLighting in="Card" lightingColor="#ffffff">
+        <feRadialGradient fx="50%" fy="50%" r="60%">
+          <stop offset=".05" stop-color="#ffffff"/>
+          <stop offset=".15" stop-color="#aaaaaa"/>
+          <stop offset=".80" stop-color="#000000"/>
+        </feRadialGradient>
+      </feDiffuseLighting>
+    </filter>
+  </defs>
+  <rect x="0.5" y="0.5" width="47" height="63" fill="hsl(-50937388546506736000, 45%, -4952246108688155000%)" stroke="#795548" stroke-width="1.2" rx="4"/>
+</svg>
