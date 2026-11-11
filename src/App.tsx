@@ -19,6 +19,14 @@ import {
   type PlayerId,
 } from './game';
 
+type CardTileProps = { 
+  card: Card;
+  onClick?: (e: React.MouseEvent) => void;
+  onHover?: () => void;
+  disabled?: boolean;
+  matched?: boolean;
+  matchCount?: number;
+};
 const MONTH_HUE: Record<Month, number> = {
   1: 352,
   2: 330,
@@ -64,15 +72,6 @@ function cardStyle(card: Card): CSSProperties {
     '--month-hue': String(MONTH_HUE[card.month]),
   } as CSSProperties;
 }
-
-type CardTileProps = {
-  card: Card;
-  onClick?: () => void;
-  onHover?: () => void;
-  disabled?: boolean;
-  matched?: boolean;
-  matchCount?: number;
-};
 
 function CardTile({
   card,
