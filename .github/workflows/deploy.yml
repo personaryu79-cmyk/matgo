@@ -34,4 +34,8 @@ jobs:
         env:
           VITE_BASE: ${{ endsWith(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
           VITE_BUILD_ID: ${{ github.sha }}
-      - uses: actions/deploy-pages@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
