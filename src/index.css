@@ -539,6 +539,18 @@ summary:focus-visible {
   gap: 6px;
 }
 
+.floor-card,
+.hand-card {
+  display: block;
+  width: 100%;
+  max-width: 88px;
+  height: auto;
+  aspect-ratio: 5 / 7;
+  object-fit: contain;
+  border-radius: 6px;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.26));
+}
+
 .floor {
   min-height: 92px;
   align-content: start;

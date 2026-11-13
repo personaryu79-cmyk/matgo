@@ -1,15 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 336" role="img" aria-labelledby="title-m06-tti-1">
+  <title id="title-m06-tti-1">모란 띠</title>
   <defs>
-    <filter id="m06-tti-1-noise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="2"/>
-      <feDiffuseLighting in="Card" lightingColor="#ffffff">
-        <feRadialGradient fx="50%" fy="50%" r="60%">
-          <stop offset=".05" stop-color="#ffffff"/>
-          <stop offset=".15" stop-color="#aaaaaa"/>
-          <stop offset=".80" stop-color="#000000"/>
-        </feRadialGradient>
-      </feDiffuseLighting>
-    </filter>
+    <linearGradient id="paper-m06-tti-1" x2="0" y2="1"><stop stop-color="#fffdf5"/><stop offset="1" stop-color="#eee3c8"/></linearGradient>
+    <filter id="shadow-m06-tti-1" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#332b20" flood-opacity=".22"/></filter>
   </defs>
-  <rect x="0.5" y="0.5" width="47" height="63" fill="hsl(478063546004349000000, 45%, 46478400305978380000%)" stroke="#795548" stroke-width="1.2" rx="4"/>
+  <rect x="5" y="5" width="230" height="326" rx="12" fill="url(#paper-m06-tti-1)" stroke="#6f5038" stroke-width="3" filter="url(#shadow-m06-tti-1)"/>
+  <rect x="13" y="13" width="214" height="310" rx="8" fill="none" stroke="#bd5572" stroke-width="2"/>
+  <path d="M22 52 H218" stroke="#d9c9a5" stroke-width="2"/>
+  <circle cx="30" cy="32" r="12" fill="#bd5572"/><text x="30" y="37" text-anchor="middle" font-size="13" font-weight="700" fill="#fffaf0">6</text>
+  <text x="48" y="38" font-size="15" font-weight="700" fill="#4c4031">모란</text>
+  <g><g>
+      <path d="M48 105 Q120 85 192 105 L192 222 Q120 242 48 222Z" fill="#fffaf0" stroke="#d2c5a6" stroke-width="2"/>
+      <path d="M52 126 Q120 109 188 126 L188 184 Q120 201 52 184Z" fill="#426eaa"/>
+      <path d="M52 134 Q120 117 188 134 M52 176 Q120 193 188 176" fill="none" stroke="#f7e7c8" stroke-width="3"/>
+      <circle cx="72" cy="155" r="7" fill="#f6e8c9"/><circle cx="168" cy="155" r="7" fill="#f6e8c9"/>
+      <g transform="translate(120 155)" fill="#f2d982" stroke="#8d493d" stroke-width=".8">
+    <ellipse cy="-10.44" rx="6.12" ry="11.700000000000001"/>
+    <ellipse cy="-10.44" rx="6.12" ry="11.700000000000001" transform="rotate(72)"/>
+    <ellipse cy="-10.44" rx="6.12" ry="11.700000000000001" transform="rotate(144)"/>
+    <ellipse cy="-10.44" rx="6.12" ry="11.700000000000001" transform="rotate(216)"/>
+    <ellipse cy="-10.44" rx="6.12" ry="11.700000000000001" transform="rotate(288)"/>
+    <circle r="3.96" fill="#e7bd55" stroke="none"/>
+  </g>
+      <text x="120" y="255" text-anchor="middle" font-size="18" font-weight="700" fill="#49392e">모란 띠</text>
+    </g></g>
+  <path d="M22 293 H218" stroke="#d9c9a5" stroke-width="2"/>
+  <text x="120" y="314" text-anchor="middle" font-size="12" letter-spacing="3" fill="#806b4a">MATGO · 06</text>
 </svg>

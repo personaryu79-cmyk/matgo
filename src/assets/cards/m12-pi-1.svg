@@ -1,15 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 336" role="img" aria-labelledby="title-m12-pi-1">
+  <title id="title-m12-pi-1">비 피</title>
   <defs>
-    <filter id="m12-pi-1-noise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="2"/>
-      <feDiffuseLighting in="Card" lightingColor="#ffffff">
-        <feRadialGradient fx="50%" fy="50%" r="60%">
-          <stop offset=".05" stop-color="#ffffff"/>
-          <stop offset=".15" stop-color="#aaaaaa"/>
-          <stop offset=".80" stop-color="#000000"/>
-        </feRadialGradient>
-      </feDiffuseLighting>
-    </filter>
+    <linearGradient id="paper-m12-pi-1" x2="0" y2="1"><stop stop-color="#fffdf5"/><stop offset="1" stop-color="#eee3c8"/></linearGradient>
+    <filter id="shadow-m12-pi-1" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#332b20" flood-opacity=".22"/></filter>
   </defs>
-  <rect x="0.5" y="0.5" width="47" height="63" fill="hsl(10932315354426770000, 45%, 1062863992791491300%)" stroke="#795548" stroke-width="1.2" rx="4"/>
+  <rect x="5" y="5" width="230" height="326" rx="12" fill="url(#paper-m12-pi-1)" stroke="#6f5038" stroke-width="3" filter="url(#shadow-m12-pi-1)"/>
+  <rect x="13" y="13" width="214" height="310" rx="8" fill="none" stroke="#527d9b" stroke-width="2"/>
+  <path d="M22 52 H218" stroke="#d9c9a5" stroke-width="2"/>
+  <circle cx="30" cy="32" r="12" fill="#527d9b"/><text x="30" y="37" text-anchor="middle" font-size="13" font-weight="700" fill="#fffaf0">12</text>
+  <text x="48" y="38" font-size="15" font-weight="700" fill="#4c4031">비</text>
+  <g><g>
+    <path d="M72 226 Q95 198 111 165 Q127 132 161 105 M109 169 Q82 159 67 137 M126 142 Q153 153 176 145 M94 195 Q69 194 57 180" fill="none" stroke="#59784c" stroke-width="5" stroke-linecap="round"/>
+    <g transform="translate(161 105)" fill="#527d9b" stroke="#8d493d" stroke-width=".8">
+    <ellipse cy="-8.7" rx="5.1000000000000005" ry="9.75"/>
+    <ellipse cy="-8.7" rx="5.1000000000000005" ry="9.75" transform="rotate(72)"/>
+    <ellipse cy="-8.7" rx="5.1000000000000005" ry="9.75" transform="rotate(144)"/>
+    <ellipse cy="-8.7" rx="5.1000000000000005" ry="9.75" transform="rotate(216)"/>
+    <ellipse cy="-8.7" rx="5.1000000000000005" ry="9.75" transform="rotate(288)"/>
+    <circle r="3.3" fill="#e7bd55" stroke="none"/>
+  </g><g transform="translate(67 137)" fill="#73934b" stroke="#8d493d" stroke-width=".8">
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5"/>
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5" transform="rotate(72)"/>
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5" transform="rotate(144)"/>
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5" transform="rotate(216)"/>
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5" transform="rotate(288)"/>
+    <circle r="2.2" fill="#e7bd55" stroke="none"/>
+  </g><g transform="translate(176 145)" fill="#527d9b" stroke="#8d493d" stroke-width=".8">
+    <ellipse cy="-5.22" rx="3.06" ry="5.8500000000000005"/>
+    <ellipse cy="-5.22" rx="3.06" ry="5.8500000000000005" transform="rotate(72)"/>
+    <ellipse cy="-5.22" rx="3.06" ry="5.8500000000000005" transform="rotate(144)"/>
+    <ellipse cy="-5.22" rx="3.06" ry="5.8500000000000005" transform="rotate(216)"/>
+    <ellipse cy="-5.22" rx="3.06" ry="5.8500000000000005" transform="rotate(288)"/>
+    <circle r="1.98" fill="#e7bd55" stroke="none"/>
+  </g><g transform="translate(57 180)" fill="#73934b" stroke="#8d493d" stroke-width=".8">
+    <ellipse cy="-4.64" rx="2.72" ry="5.2"/>
+    <ellipse cy="-4.64" rx="2.72" ry="5.2" transform="rotate(72)"/>
+    <ellipse cy="-4.64" rx="2.72" ry="5.2" transform="rotate(144)"/>
+    <ellipse cy="-4.64" rx="2.72" ry="5.2" transform="rotate(216)"/>
+    <ellipse cy="-4.64" rx="2.72" ry="5.2" transform="rotate(288)"/>
+    <circle r="1.76" fill="#e7bd55" stroke="none"/>
+  </g><g transform="translate(120 170)" fill="#527d9b" stroke="#8d493d" stroke-width=".8">
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5"/>
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5" transform="rotate(72)"/>
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5" transform="rotate(144)"/>
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5" transform="rotate(216)"/>
+    <ellipse cy="-5.8" rx="3.4000000000000004" ry="6.5" transform="rotate(288)"/>
+    <circle r="2.2" fill="#e7bd55" stroke="none"/>
+  </g>
+    <path d="M53 238 Q120 221 187 238" fill="none" stroke="#bca878" stroke-width="2"/>
+    <text x="120" y="270" text-anchor="middle" font-size="17" font-weight="700" fill="#49392e">비 피</text>
+  </g></g>
+  <path d="M22 293 H218" stroke="#d9c9a5" stroke-width="2"/>
+  <text x="120" y="314" text-anchor="middle" font-size="12" letter-spacing="3" fill="#806b4a">MATGO · 12</text>
 </svg>
