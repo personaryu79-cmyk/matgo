@@ -420,7 +420,7 @@ export default function App() {
              {game.floor.map((card) => (
                <img 
                  key={card.id} 
-                 src={`/cards/${card.id}.svg`} 
+                 src={`${import.meta.env.BASE_URL}cards/${card.id}.svg`}
                  alt={`${card.kind === 'gwang' ? '광' : card.kind === 'yeol' ? '열끗' : card.kind === 'tti' ? '띠' : '피'} - ${card.name}`} 
                  className="floor-card"
                />
@@ -456,7 +456,7 @@ export default function App() {
                return (
                  <img 
                    key={card.id} 
-                   src={`/cards/${card.id}.svg`} 
+                   src={`${import.meta.env.BASE_URL}cards/${card.id}.svg`}
                    alt={`${card.kind === 'gwang' ? '광' : card.kind === 'yeol' ? '열끗' : card.kind === 'tti' ? '띠' : '피'} - ${card.name}`} 
                    className="hand-card"
                  />
